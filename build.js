@@ -69,6 +69,13 @@ function buildDocs() {
     path.join(__dirname, "/dist/index.html"),
     ejs.render(template, { getNewId, getCurrentId, example })
   );
+  
+  // Build portfolio page
+  const portfolioTemplate = fs.readFileSync("docs/portfolio.html.ejs", "utf-8");
+  fs.writeFileSync(
+    path.join(__dirname, "/dist/portfolio.html"),
+    ejs.render(portfolioTemplate, {})
+  );
 }
 
 function build() {
