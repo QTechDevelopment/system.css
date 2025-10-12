@@ -12,6 +12,12 @@
 
   <link rel="stylesheet" href="system.css">
   <link rel="stylesheet" href="docs.css">
+  <style>
+    .theme-switcher {
+      margin-bottom: 10px;
+      width: 100%;
+    }
+  </style>
 </head>
 <body ontouchstart>
   <div class="container">
@@ -25,6 +31,7 @@
           </div>
           <div class="separator"></div>
           <div class="window-pane">
+            <button class="btn theme-switcher" aria-label="Switch theme">☀️ Light</button>
             <ul class="menu-items">
               <li><a href="#intro">Intro</a></li>
               <li>Components
@@ -632,5 +639,6 @@
     </p>
   </div>
 
+  <script src="theme.js"></script>
 </body>
 </html>
