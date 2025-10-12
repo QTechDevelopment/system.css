@@ -93,7 +93,13 @@
     }
     
     .autumn-burst-banner {
-      background: linear-gradient(135deg, #ff6b6b 0%, #feca57 50%, #ff6b6b 100%);
+      background: repeating-linear-gradient(
+        45deg,
+        var(--primary),
+        var(--primary) 10px,
+        var(--secondary) 10px,
+        var(--secondary) 20px
+      );
       padding: 20px;
       text-align: center;
       border: 3px solid var(--secondary);
@@ -105,6 +111,25 @@
       font-size: 2em;
       margin: 0 0 10px 0;
       color: var(--secondary);
+      background: var(--primary);
+      display: inline-block;
+      padding: 5px 15px;
+    }
+    
+    .autumn-burst-featured {
+      border: 3px solid var(--secondary) !important;
+      background: var(--primary) !important;
+    }
+    
+    .autumn-burst-featured h3 {
+      background: repeating-linear-gradient(
+        45deg,
+        transparent,
+        transparent 10px,
+        var(--secondary) 10px,
+        var(--secondary) 11px
+      );
+      padding: 5px;
     }
   </style>
 </head>
@@ -238,7 +263,7 @@
         </div>
 
         <!-- Project 4 - Autumn Burst Games -->
-        <div class="project-card" style="border: 3px solid var(--secondary); background: linear-gradient(135deg, rgba(255,107,107,0.1) 0%, rgba(254,202,87,0.1) 50%, rgba(255,107,107,0.1) 100%);">
+        <div class="project-card autumn-burst-featured">
           <h3>🍂 Autumn Burst Games - Featured</h3>
           <p style="font-family: Geneva_9;">My game development studio focusing on creating engaging and innovative gaming experiences. Check out our latest releases and upcoming projects!</p>
           <div class="btn-group">
@@ -301,7 +326,7 @@
     <!-- Footer -->
     <div style="text-align: center; padding: 20px; font-family: Geneva_9;">
       <p>Built with <a href="https://github.com/sakofchit/system.css" target="_blank">system.css</a> - A retro Apple-inspired design system</p>
-      <p>&copy; 2025 C. Nettles. All rights reserved.</p>
+      <p>&copy; <script>document.write(new Date().getFullYear())</script> C. Nettles. All rights reserved.</p>
     </div>
 
   </div>
