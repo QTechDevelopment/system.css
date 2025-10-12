@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>C. Nettles Portfolio | Interactive Developer Portfolio</title>
+  <link rel="Shortcut Icon" type="image/x-icon" href="icon.png" />
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+
+  <meta property="og:title" content="C. Nettles Portfolio" />
+  <meta name="Description" content="Interactive Developer Portfolio using system.css" />
+  <meta property="og:description" content="Interactive Developer Portfolio using system.css" />
+
+  <link rel="stylesheet" href="system.css">
+  <link rel="stylesheet" href="docs.css">
+  <style>
+    .portfolio-container {
+      max-width: 1200px;
+      margin: 20px auto;
+      padding: 20px;
+    }
+    
+    .profile-window {
+      margin-bottom: 20px;
+    }
+    
+    .profile-header {
+      display: flex;
+      align-items: center;
+      padding: 20px;
+      gap: 20px;
+    }
+    
+    .profile-info h1 {
+      font-family: Chicago_12;
+      font-size: 2em;
+      margin: 0 0 5px 0;
+    }
+    
+    .profile-info p {
+      margin: 5px 0;
+    }
+    
+    .section-window {
+      margin-bottom: 20px;
+    }
+    
+    .window-content {
+      padding: 15px;
+    }
+    
+    .project-card {
+      border: 2px solid var(--secondary);
+      padding: 15px;
+      margin-bottom: 15px;
+      background: var(--primary);
+    }
+    
+    .project-card h3 {
+      font-family: Chicago_12;
+      font-size: 1.2em;
+      margin: 0 0 10px 0;
+    }
+    
+    .project-card p {
+      margin: 5px 0;
+    }
+    
+    .skill-tag {
+      display: inline-block;
+      padding: 3px 8px;
+      margin: 3px;
+      border: 1px solid var(--secondary);
+      font-size: 0.8em;
+      font-family: Geneva_9;
+    }
+    
+    .btn-group {
+      margin-top: 10px;
+    }
+    
+    .btn-group .btn {
+      margin-right: 10px;
+      margin-bottom: 5px;
+    }
+    
+    .contact-info {
+      list-style: none;
+      padding: 0;
+    }
+    
+    .contact-info li {
+      padding: 5px 0;
+    }
+    
+    .autumn-burst-banner {
+      background: repeating-linear-gradient(
+        45deg,
+        var(--primary),
+        var(--primary) 10px,
+        var(--secondary) 10px,
+        var(--secondary) 20px
+      );
+      padding: 20px;
+      text-align: center;
+      border: 3px solid var(--secondary);
+      margin-bottom: 20px;
+    }
+    
+    .autumn-burst-banner h2 {
+      font-family: Chicago;
+      font-size: 2em;
+      margin: 0 0 10px 0;
+      color: var(--secondary);
+      background: var(--primary);
+      display: inline-block;
+      padding: 5px 15px;
+    }
+    
+    .autumn-burst-featured {
+      border: 3px solid var(--secondary) !important;
+      background: var(--primary) !important;
+    }
+    
+    .autumn-burst-featured h3 {
+      background: repeating-linear-gradient(
+        45deg,
+        transparent,
+        transparent 10px,
+        var(--secondary) 10px,
+        var(--secondary) 11px
+      );
+      padding: 5px;
+    }
+  </style>
+</head>
+<body ontouchstart>
+  <div class="portfolio-container">
+    
+    <!-- Autumn Burst Games Banner -->
+    <div class="autumn-burst-banner">
+      <h2>🍂 Autumn Burst Games 🍂</h2>
+      <p style="font-family: Geneva_9; font-size: 1.2em; margin: 10px 0;">Check out my game development projects!</p>
+      <a href="https://vibe-coding-project-o75c-lt4symiwy-qtechdevelopments-projects.vercel.app/" target="_blank" class="btn" style="display: inline-block;">Visit Autumn Burst Games</a>
+      <a href="https://vibe-coding-project-o75c-xv6lqwbjn-qtechdevelopments-projects.vercel.app/" target="_blank" class="btn" style="display: inline-block;">Autumn Project</a>
+    </div>
+
+    <!-- Profile Section -->
+    <div class="window profile-window">
+      <div class="title-bar">
+        <button aria-label="Close" class="close"></button>
+        <h1 class="title">Profile</h1>
+        <button aria-label="Resize" class="resize"></button>
+      </div>
+      <div class="separator"></div>
+      <div class="window-pane">
+        <div class="profile-header">
+          <div class="profile-info">
+            <h1>C. Nettles</h1>
+            <p style="font-family: Geneva_9; font-size: 1.1em;"><strong>Software Developer | Game Developer | Technical Innovator</strong></p>
+            <p style="font-family: Geneva_9;">Passionate about creating interactive experiences and innovative solutions</p>
+            <ul class="contact-info" style="font-family: Geneva_9;">
+              <li>🔗 LinkedIn: <a href="https://www.linkedin.com/in/c-nettles01/" target="_blank">linkedin.com/in/c-nettles01</a></li>
+              <li>💻 GitHub: <a href="https://github.com/c-nettles01" target="_blank">github.com/c-nettles01</a></li>
+              <li>🎮 Autumn Burst Games: <a href="https://vibe-coding-project-o75c-lt4symiwy-qtechdevelopments-projects.vercel.app/" target="_blank">autumnburstgames.com</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- About Section -->
+    <div class="window section-window">
+      <div class="title-bar">
+        <button aria-label="Close" class="close"></button>
+        <h1 class="title">About</h1>
+        <button aria-label="Resize" class="resize"></button>
+      </div>
+      <div class="separator"></div>
+      <div class="window-pane window-content">
+        <p>Welcome to my interactive portfolio! I'm a software developer with a passion for creating engaging digital experiences. My work spans from game development at Autumn Burst Games to various technical projects showcased on my GitHub.</p>
+        <p>I specialize in building innovative solutions that combine creativity with technical expertise. Whether it's developing games, crafting web applications, or solving complex technical challenges, I bring dedication and enthusiasm to every project.</p>
+      </div>
+    </div>
+
+    <!-- Skills Section -->
+    <div class="window section-window">
+      <div class="title-bar">
+        <button aria-label="Close" class="close"></button>
+        <h1 class="title">Skills & Technologies</h1>
+        <button aria-label="Resize" class="resize"></button>
+      </div>
+      <div class="separator"></div>
+      <div class="window-pane window-content">
+        <div>
+          <strong style="font-family: Geneva_9;">Programming Languages:</strong><br>
+          <span class="skill-tag">JavaScript</span>
+          <span class="skill-tag">Python</span>
+          <span class="skill-tag">C#</span>
+          <span class="skill-tag">Java</span>
+          <span class="skill-tag">C++</span>
+        </div>
+        <br>
+        <div>
+          <strong style="font-family: Geneva_9;">Game Development:</strong><br>
+          <span class="skill-tag">Unity</span>
+          <span class="skill-tag">Unreal Engine</span>
+          <span class="skill-tag">Game Design</span>
+          <span class="skill-tag">Level Design</span>
+        </div>
+        <br>
+        <div>
+          <strong style="font-family: Geneva_9;">Web Development:</strong><br>
+          <span class="skill-tag">HTML/CSS</span>
+          <span class="skill-tag">React</span>
+          <span class="skill-tag">Node.js</span>
+          <span class="skill-tag">Web Design</span>
+        </div>
+        <br>
+        <div>
+          <strong style="font-family: Geneva_9;">Tools & Platforms:</strong><br>
+          <span class="skill-tag">Git</span>
+          <span class="skill-tag">GitHub</span>
+          <span class="skill-tag">VS Code</span>
+          <span class="skill-tag">Docker</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- GitHub Projects Section -->
+    <div class="window section-window">
+      <div class="title-bar">
+        <button aria-label="Close" class="close"></button>
+        <h1 class="title">Featured GitHub Projects</h1>
+        <button aria-label="Resize" class="resize"></button>
+      </div>
+      <div class="separator"></div>
+      <div class="window-pane window-content">
+        
+        <!-- Project 1 -->
+        <div class="project-card">
+          <h3>🎮 Game Development Projects</h3>
+          <p style="font-family: Geneva_9;">Collection of game development projects including mechanics, prototypes, and full games developed using Unity and other game engines.</p>
+          <div class="btn-group">
+            <a href="https://github.com/c-nettles01?tab=repositories" target="_blank" class="btn">View on GitHub</a>
+          </div>
+        </div>
+
+        <!-- Project 2 -->
+        <div class="project-card">
+          <h3>💻 Web Development Projects</h3>
+          <p style="font-family: Geneva_9;">Various web applications and tools showcasing modern web development practices, interactive interfaces, and creative solutions.</p>
+          <div class="btn-group">
+            <a href="https://github.com/c-nettles01?tab=repositories" target="_blank" class="btn">View on GitHub</a>
+          </div>
+        </div>
+
+        <!-- Project 3 -->
+        <div class="project-card">
+          <h3>🛠️ Technical Tools & Utilities</h3>
+          <p style="font-family: Geneva_9;">Open-source tools, libraries, and utilities designed to solve specific technical challenges and improve developer workflows.</p>
+          <div class="btn-group">
+            <a href="https://github.com/c-nettles01?tab=repositories" target="_blank" class="btn">View on GitHub</a>
+          </div>
+        </div>
+
+        <!-- Project 4 - Autumn Burst Games -->
+        <div class="project-card autumn-burst-featured">
+          <h3>🍂 Autumn Burst Games - Featured</h3>
+          <p style="font-family: Geneva_9;">My game development studio focusing on creating engaging and innovative gaming experiences. Check out our latest releases and upcoming projects!</p>
+          <div class="btn-group">
+            <a href="https://vibe-coding-project-o75c-lt4symiwy-qtechdevelopments-projects.vercel.app/" target="_blank" class="btn">Visit Website</a>
+            <a href="https://vibe-coding-project-o75c-xv6lqwbjn-qtechdevelopments-projects.vercel.app/" target="_blank" class="btn">Autumn Project</a>
+            <a href="https://github.com/c-nettles01?tab=repositories" target="_blank" class="btn">View Code</a>
+          </div>
+        </div>
+
+        <p style="text-align: center; margin-top: 20px; font-family: Geneva_9;">
+          <a href="https://github.com/c-nettles01?tab=repositories" target="_blank">View all repositories on GitHub →</a>
+        </p>
+      </div>
+    </div>
+
+    <!-- Experience Section -->
+    <div class="window section-window">
+      <div class="title-bar">
+        <button aria-label="Close" class="close"></button>
+        <h1 class="title">Experience & Education</h1>
+        <button aria-label="Resize" class="resize"></button>
+      </div>
+      <div class="separator"></div>
+      <div class="window-pane window-content">
+        <div style="margin-bottom: 15px;">
+          <h3 style="font-family: Chicago_12; margin: 0;">Game Developer</h3>
+          <p style="font-family: Geneva_9; margin: 5px 0;"><strong>Autumn Burst Games</strong></p>
+          <p style="font-family: Geneva_9;">Leading game development initiatives, creating engaging gameplay experiences, and building interactive entertainment projects.</p>
+        </div>
+        
+        <div style="margin-bottom: 15px;">
+          <h3 style="font-family: Chicago_12; margin: 0;">Software Developer</h3>
+          <p style="font-family: Geneva_9; margin: 5px 0;"><strong>Various Projects</strong></p>
+          <p style="font-family: Geneva_9;">Developing software solutions, web applications, and technical tools. Contributing to open-source projects and building innovative digital solutions.</p>
+        </div>
+
+        <div style="border-top: 2px solid var(--secondary); padding-top: 15px; margin-top: 15px;">
+          <p style="font-family: Geneva_9;"><em>For detailed work experience and education information, please visit my <a href="https://www.linkedin.com/in/c-nettles01/" target="_blank">LinkedIn profile</a>.</em></p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Contact Section -->
+    <div class="window section-window">
+      <div class="title-bar">
+        <button aria-label="Close" class="close"></button>
+        <h1 class="title">Get In Touch</h1>
+        <button aria-label="Resize" class="resize"></button>
+      </div>
+      <div class="separator"></div>
+      <div class="window-pane window-content">
+        <p>I'm always interested in hearing about new opportunities, collaborations, or just connecting with fellow developers and creators!</p>
+        <div class="btn-group">
+          <a href="https://www.linkedin.com/in/c-nettles01/" target="_blank" class="btn">LinkedIn</a>
+          <a href="https://github.com/c-nettles01" target="_blank" class="btn">GitHub</a>
+          <a href="https://vibe-coding-project-o75c-lt4symiwy-qtechdevelopments-projects.vercel.app/" target="_blank" class="btn">Autumn Burst Games</a>
+          <a href="https://vibe-coding-project-o75c-xv6lqwbjn-qtechdevelopments-projects.vercel.app/" target="_blank" class="btn">Autumn Project</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Footer -->
+    <div style="text-align: center; padding: 20px; font-family: Geneva_9;">
+      <p>Built with <a href="docs.html">system.css</a> (<a href="https://github.com/sakofchit/system.css" target="_blank">GitHub</a>) - A retro Apple-inspired design system</p>
+      <p>&copy; <script>document.write(new Date().getFullYear())</script> C. Nettles. All rights reserved.</p>
+    </div>
+
+  </div>
+</body>
+</html>
