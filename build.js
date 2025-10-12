@@ -41,7 +41,7 @@ function buildDocs() {
     return id;
   }
 
-  const template = fs.readFileSync("docs/index.html.ejs", "utf-8");
+  const docsTemplate = fs.readFileSync("docs/docs.html.ejs", "utf-8");
   function example(code) {
     const magicBrackets = /\[\[(.*)\]\]/g;
     const dedented = dedent(code);
@@ -65,13 +65,21 @@ function buildDocs() {
       );
     } else throw "error globbing dist directory.";
   });
+  
+  // Build system.css documentation page as docs.html
   fs.writeFileSync(
-    path.join(__dirname, "/dist/index.html"),
-    ejs.render(template, { getNewId, getCurrentId, example })
+    path.join(__dirname, "/dist/docs.html"),
+    ejs.render(docsTemplate, { getNewId, getCurrentId, example })
   );
   
-  // Build portfolio page
-  const portfolioTemplate = fs.readFileSync("docs/portfolio.html.ejs", "utf-8");
+  // Build portfolio page as index.html (homepage)
+  const portfolioTemplate = fs.readFileSync("docs/index.html.ejs", "utf-8");
+  fs.writeFileSync(
+    path.join(__dirname, "/dist/index.html"),
+    ejs.render(portfolioTemplate, {})
+  );
+  
+  // Also build portfolio.html for backward compatibility
   fs.writeFileSync(
     path.join(__dirname, "/dist/portfolio.html"),
     ejs.render(portfolioTemplate, {})
