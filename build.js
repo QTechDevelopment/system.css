@@ -72,17 +72,16 @@ function buildDocs() {
     ejs.render(docsTemplate, { getNewId, getCurrentId, example })
   );
   
-  // Build portfolio page as index.html (homepage)
+  // Build portfolio page as index.html (homepage) and portfolio.html (backward compatibility)
   const portfolioTemplate = fs.readFileSync("docs/index.html.ejs", "utf-8");
+  const portfolioHtml = ejs.render(portfolioTemplate, {});
   fs.writeFileSync(
     path.join(__dirname, "/dist/index.html"),
-    ejs.render(portfolioTemplate, {})
+    portfolioHtml
   );
-  
-  // Also build portfolio.html for backward compatibility
   fs.writeFileSync(
     path.join(__dirname, "/dist/portfolio.html"),
-    ejs.render(portfolioTemplate, {})
+    portfolioHtml
   );
 }
 
