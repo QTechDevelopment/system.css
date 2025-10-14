@@ -132,10 +132,24 @@
       );
       padding: 5px;
     }
+    
+    .theme-switcher-wrapper {
+      text-align: right;
+      margin-bottom: 10px;
+    }
+    
+    .theme-switcher {
+      display: inline-block;
+    }
   </style>
 </head>
 <body ontouchstart>
   <div class="portfolio-container">
+    
+    <!-- Theme Switcher -->
+    <div class="theme-switcher-wrapper">
+      <button class="btn theme-switcher" aria-label="Switch theme">☀️ Light</button>
+    </div>
     
     <!-- Autumn Burst Games Banner -->
     <div class="autumn-burst-banner">
@@ -331,5 +345,7 @@
     </div>
 
   </div>
+  
+  <script src="theme.js"></script>
 </body>
 </html>
